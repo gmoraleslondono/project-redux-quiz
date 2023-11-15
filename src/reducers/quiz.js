@@ -1,19 +1,44 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Change these to your own questions!
+// https://www.weareteachers.com/weird-fun-facts/
 const questions = [
   {
     id: 1,
-    questionText: "Who set the Olympic record for the 100m dash in 2012?",
-    options: ["Usain Bolt", "Justin Gatlin", "Tyson Gay", "Asafa Powell"],
+    questionText: "Which country prohibits the ownership of just one guinea pig?",
+    options: ["Switzerland", "Mexico", "Brazil", "New Guinea"],
+    answerText: "Since guinea pigs are such social creatures, one guinea pig would get lonely so having just one is considered animal abuse in Switzerland.",
     correctAnswerIndex: 0
   },
   {
     id: 2,
     questionText:
-      "When was Michael Phelps last named male World Swimmer of the Year?",
-    options: ["2012", "2014", "2016", "2018"],
+      "Which country chose the unicorn as its national animal?",
+    options: ["Netherland", "Portugal", "Scotland", "Colombia"],
+    answerText: "Scotland chose the unicorn as its national animal.",
     correctAnswerIndex: 2
+  }, {
+    id: 3,
+    questionText:
+      "Avocados are:",
+    options: ["Legumes", "Fruits", "Grains", "Vegetables"],
+    answerText: "Avocados are fruits because they are single-seeded berries.",
+    correctAnswerIndex: 1
+  },
+  {
+    id: 4,
+    questionText:
+      "What is the human part of the body that can’t heal themselves?",
+    options: ["Nails", "Theet", "hair", "Tongue"],
+    answerText: "Teeth are not made of live tissue and are coated in enamel, which can’t spontaneously regenerate.",
+    correctAnswerIndex: 1
+  },
+  {
+    id: 5,
+    questionText:
+      "In which country McDonald’s serves spaghetti?",
+    options: ["Italia", "Philippines", "Spain", "Georgia"],
+    answerText: "In Philippines you can buy the McSpaghetti meat sauce pasta comes with a side of “McDo” fried chicken.",
+    correctAnswerIndex: 1
   }
 ];
 
