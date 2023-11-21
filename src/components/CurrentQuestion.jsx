@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { quiz } from '../reducers/quiz'
 
 import { Summary } from './Summary'
+import "../css/CurrentQuestion.css";
 
 export const CurrentQuestion = () => {
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex]);
@@ -35,17 +36,18 @@ export const CurrentQuestion = () => {
   }
 
   return (
-    <div>
-      <h1>Question: {question.questionText}</h1>
+    <div className="current-question" style={{backgroundColor: `${question.bgColor}`}}>
+      <div className="quiz-progress">{question.id}/5</div>
+      
+      <h1 className="question">{question.id}. {question.questionText}</h1>
       <div className="options">
         {question.options.map((option, index) => (
           <button key="index" onClick={()=> { submitAnswer(question.id, index)}}>{option}</button>
         ))}
       </div>
       { answer &&
-        <div>
-          <p>{`The answer is ${statusAnswer()}`}</p>
-          <p>{question.answerText}</p>
+        <div className="answer">
+          <p className="answer-text">{`The answer is ${statusAnswer()}`}. {question.answerText}</p>
           <button onClick={handleNext}>Go to the next question!</button>
         </div>
       }

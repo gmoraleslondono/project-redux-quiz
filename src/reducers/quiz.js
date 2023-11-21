@@ -7,6 +7,7 @@ const questions = [
     questionText: "Which country prohibits the ownership of just one guinea pig?",
     options: ["Switzerland", "Mexico", "Brazil", "New Guinea"],
     answerText: "Since guinea pigs are such social creatures, one guinea pig would get lonely so having just one is considered animal abuse in Switzerland.",
+    bgColor: "#F2AA40",
     correctAnswerIndex: 0
   },
   {
@@ -15,6 +16,7 @@ const questions = [
       "Which country chose the unicorn as its national animal?",
     options: ["Netherland", "Portugal", "Scotland", "Colombia"],
     answerText: "Scotland chose the unicorn as its national animal.",
+    bgColor: "#DD4A91",
     correctAnswerIndex: 2
   }, {
     id: 3,
@@ -22,6 +24,7 @@ const questions = [
       "Avocados are:",
     options: ["Legumes", "Fruits", "Grains", "Vegetables"],
     answerText: "Avocados are fruits because they are single-seeded berries.",
+    bgColor: "#79B6F3",
     correctAnswerIndex: 1
   },
   {
@@ -30,6 +33,7 @@ const questions = [
       "What is the human part of the body that can’t heal themselves?",
     options: ["Nails", "Theet", "hair", "Tongue"],
     answerText: "Teeth are not made of live tissue and are coated in enamel, which can’t spontaneously regenerate.",
+    bgColor: "#917BC8",
     correctAnswerIndex: 1
   },
   {
@@ -38,6 +42,7 @@ const questions = [
       "In which country McDonald’s serves spaghetti?",
     options: ["Italia", "Philippines", "Spain", "Georgia"],
     answerText: "In Philippines you can buy the McSpaghetti meat sauce pasta comes with a side of “McDo” fried chicken.",
+    bgColor: "#9EC592",
     correctAnswerIndex: 1
   }
 ];
