@@ -17,4 +17,4 @@ npm run dev
 
 ### View it live
 
-Coming soon...
+[Visit the website](https://project-redux-quiz-gmoraleslondono.vercel.app/)
